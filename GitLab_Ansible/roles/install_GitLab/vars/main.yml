@@ -1,0 +1,9 @@
+gitlab_version: "15.0.0"
+required_packages:
+  - curl
+  - openssh-server
+  - ca-certificates
+gitlab_package: "gitlab-ee"
+gitlab_repo_url: "https://packages.gitlab.com/gitlab/gitlab-{{ gitlab_package }}/ubuntu/"
+gitlab_repo_distribution: "{{ ansible_lsb.codename }}"
+gitlab_repo_component: "main"
